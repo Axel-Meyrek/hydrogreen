@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+dist/
+coverage/
+.env*
+!.env.example
+arduino_secrets.h
+entregas/
+bases/
+*.log
+.DS_Store
+Thumbs.db
+*.tsbuildinfo

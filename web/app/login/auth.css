@@ -1,0 +1,82 @@
+/* =========================================================================
+   HydroGreenAI — Login / Crear cuenta
+   Botones, chips, cards, inputs y alertas base viven en components.css.
+   ========================================================================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-header {
+  padding: var(--space-5);
+}
+
+.auth-shell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+  padding: var(--space-4) var(--space-5) var(--space-9);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--space-6);
+}
+
+.auth-tabs {
+  display: flex;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-pill);
+  padding: 4px;
+  margin-bottom: var(--space-6);
+}
+
+.auth-tabs__btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.auth-tabs__btn.is-active {
+  background: var(--color-surface-raised);
+  color: var(--color-primary-active);
+  box-shadow: var(--shadow-xs);
+}
+
+.auth-tabs__btn:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+
+.auth-submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: var(--space-2);
+}
+
+.auth-submit:disabled {
+  opacity: 0.65;
+  cursor: default;
+  transform: none;
+}
+
+.auth-note {
+  font-size: var(--text-xs);
+  color: var(--color-text-subtle);
+  text-align: center;
+  max-width: 360px;
+}

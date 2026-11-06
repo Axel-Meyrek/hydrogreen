@@ -1,0 +1,172 @@
+/* =========================================================================
+   HydroGreenAI — Design tokens
+   Estética: cute-elegante, moderna, natural, minimalista, premium, amigable.
+   Todo el sistema visual se apoya en estas variables; los componentes no
+   deben usar valores "mágicos" fuera de aquí.
+   ========================================================================= */
+
+:root {
+  /* ---------------------------------------------------------------------
+     1. Paleta primitiva (escalas crudas, no usar directo en componentes)
+     --------------------------------------------------------------------- */
+
+  /* Sage — verde principal, suave y desaturado */
+  --sage-50:  #f4f7f0;
+  --sage-100: #e7eede;
+  --sage-200: #d0ddc3;
+  --sage-300: #b1c39d;
+  --sage-400: #8fa878;
+  --sage-500: #71905b;
+  --sage-600: #587347;
+  --sage-700: #44593a;
+  --sage-800: #34432d;
+  --sage-900: #263120;
+
+  /* Cream — fondos cálidos */
+  --cream-50:  #fffdf8;
+  --cream-100: #faf6ec;
+  --cream-200: #f2ead6;
+  --cream-300: #e6d9bd;
+
+  /* Ink — texto neutro cálido (nunca negro puro) */
+  --ink-900: #24291f;
+  --ink-700: #46503f;
+  --ink-500: #6c7862;
+  --ink-300: #9da88f;
+  --ink-100: #d7ddcd;
+
+  /* Clay — acento cálido natural (uso puntual) */
+  --clay-300: #e3b79a;
+  --clay-400: #cf9873;
+  --clay-500: #b97a54;
+  --clay-600: #9c6142;
+
+  /* Honey — estado de atención */
+  --honey-400: #e3b04b;
+  --honey-600: #a5761d;
+  --honey-bg:  #faedd0;
+
+  /* Brick — estado crítico (rojo tierra, no rojo puro) */
+  --brick-500: #b8503f;
+  --brick-600: #9c3f30;
+  --brick-bg:  #f8e3de;
+
+  /* ---------------------------------------------------------------------
+     2. Tokens semánticos — color
+     --------------------------------------------------------------------- */
+
+  --color-bg:            var(--cream-100);
+  --color-bg-alt:        var(--sage-50);
+  --color-surface:       var(--cream-50);
+  --color-surface-raised:#ffffff;
+
+  --color-border:        var(--sage-100);
+  --color-border-strong: var(--sage-200);
+
+  --color-text:          var(--ink-900);
+  --color-text-muted:    var(--ink-500);
+  --color-text-subtle:   var(--ink-300);
+  --color-text-on-primary: var(--cream-50);
+
+  --color-primary:       var(--sage-600);
+  --color-primary-hover: var(--sage-700);
+  --color-primary-active:var(--sage-800);
+  --color-primary-soft:  var(--sage-100);
+  --color-primary-soft-text: var(--sage-700);
+
+  --color-accent:        var(--clay-500);
+  --color-accent-hover:  var(--clay-600);
+  --color-accent-soft:   var(--clay-300);
+
+  --color-optimal:       var(--sage-600);
+  --color-optimal-bg:    var(--sage-100);
+  --color-warning:       var(--honey-600);
+  --color-warning-bg:    var(--honey-bg);
+  --color-critical:      var(--brick-600);
+  --color-critical-bg:   var(--brick-bg);
+
+  --color-focus-ring:    rgba(87, 115, 71, 0.28);
+
+  /* ---------------------------------------------------------------------
+     3. Tipografía
+     --------------------------------------------------------------------- */
+
+  --font-display: var(--font-fraunces), 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-body: var(--font-jakarta), 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --text-xs:  0.75rem;    /* 12px — etiquetas, metadatos */
+  --text-sm:  0.8125rem;  /* 13px — UI secundaria */
+  --text-base:0.9375rem;  /* 15px — cuerpo */
+  --text-md:  1.0625rem;  /* 17px — subtítulos */
+  --text-lg:  1.25rem;    /* 20px — títulos de sección */
+  --text-xl:  1.625rem;   /* 26px — valores destacados */
+  --text-2xl: 2rem;       /* 32px — título de marca */
+  --text-3xl: 2.75rem;    /* 44px — titular del hero */
+
+  --leading-tight:  1.15;
+  --leading-snug:   1.35;
+  --leading-normal: 1.6;
+
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --tracking-tight: -0.015em;
+  --tracking-wide:   0.03em;
+  --tracking-wider:  0.09em;
+
+  /* ---------------------------------------------------------------------
+     4. Espaciado (grid de 4px)
+     --------------------------------------------------------------------- */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 28px;
+  --space-7: 36px;
+  --space-8: 48px;
+  --space-9: 64px;
+
+  /* ---------------------------------------------------------------------
+     5. Bordes y radios
+     --------------------------------------------------------------------- */
+
+  --border-width: 1px;
+  --border-width-strong: 1.5px;
+
+  --radius-xs:   6px;
+  --radius-sm:   10px;
+  --radius-md:   16px;
+  --radius-lg:   22px;
+  --radius-pill: 999px;
+
+  /* ---------------------------------------------------------------------
+     6. Sombras (difusas, tibias — nunca negro puro)
+     --------------------------------------------------------------------- */
+
+  --shadow-xs: 0 1px 2px rgba(36, 41, 31, 0.05);
+  --shadow-sm: 0 2px 6px rgba(36, 41, 31, 0.06), 0 1px 2px rgba(36, 41, 31, 0.04);
+  --shadow-md: 0 10px 26px rgba(36, 41, 31, 0.09), 0 2px 6px rgba(36, 41, 31, 0.05);
+  --shadow-lg: 0 20px 44px rgba(36, 41, 31, 0.14), 0 4px 10px rgba(36, 41, 31, 0.06);
+  --shadow-focus: 0 0 0 4px var(--color-focus-ring);
+
+  /* ---------------------------------------------------------------------
+     7. Movimiento
+     --------------------------------------------------------------------- */
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 120ms var(--ease-standard);
+  --transition-base: 200ms var(--ease-standard);
+
+  /* ---------------------------------------------------------------------
+     8. Iconografía
+     --------------------------------------------------------------------- */
+
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+  --icon-stroke: 1.75;
+}
